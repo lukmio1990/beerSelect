@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171717;
+  font-family: "Fira Code", sans-serif;
+  color: white;
+  padding: 25px;
+}
+
+.info {
+  width: 600px;
+}
+
+.info h1 {
+  font-size: 45px;
+}
+
+.info p {
+  font-size: 18px;
+}
+
+.filters {
+  display: flex;
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.filters__button {
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.active {
+  background-color: white;
+  color: #171717;
+}
+
+/* CARD */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 60px 60px;
+  margin-top: 70px;
+}
+
+.card {
+  display: grid;
+  min-height: 400px;
+  grid-template-rows: 80px 1fr;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.card__header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  color: #171717;
+  padding: 22px 0;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+}
+
+.card__content__button {
+  font-family: "Fira Code", sans-serif;
+  font-weight: bold;
+  background-color: white;
+  width: 150px;
+  padding: 8px 0;
+  border: 1px solid black;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/*   font-family: "Fira Code", sans-serif; */
